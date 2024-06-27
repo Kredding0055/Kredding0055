@@ -6,11 +6,19 @@ otherwise.
 Vowels are the letters "a", "e", "i", "o", "u".
 */
 
-// Your code here 
+function hasVowel(word) {
+    let char = ('a', 'e', 'i', 'o', 'u')
+    if(word === char) {
+        return true
+    }
+        else {
+            return false
+        }
+}
 
-// console.log(hasVowel('dog'));          // => true
-// console.log(hasVowel('conventional')); // => true
-// console.log(hasVowel('rhythm'));       // => false
+console.log(hasVowel('dog'));          // => true
+console.log(hasVowel('conventional')); // => true
+console.log(hasVowel('rhythm'));       // => false
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = hasVowel;
