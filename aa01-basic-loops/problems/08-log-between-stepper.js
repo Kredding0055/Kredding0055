@@ -9,9 +9,19 @@ HINT: This function only needs to print using console.log it does not need to
 return anything.
 */
 
-// Your code here 
+function logBetweenStepper(min, max, int) {
+    //while(int >= min && int <= max)
+    let i = '';
+    for(i = min; i <= max ; i += int) {
+        if(i >= min && i <= max)
+            console.log(i);
+        }
+    
+}
 
-// logBetweenStepper(5, 9, 1);
+logBetweenStepper(5, 9, 1);
+logBetweenStepper(4, 8, 2);
+logBetweenStepper(-10, 15, 5)
 /* prints out:
 5
 6
