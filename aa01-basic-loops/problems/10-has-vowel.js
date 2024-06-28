@@ -7,14 +7,24 @@ Vowels are the letters "a", "e", "i", "o", "u".
 */
 
 function hasVowel(word) {
-    let char = ('a', 'e', 'i', 'o', 'u')
-    if(word === char) {
-        return true
-    }
-        else {
-            return false
+    let vowel = 'aeiou';
+    
+    for (let i = 0; i < word.length; i++) {
+        let letter = word[i];
+
+        if (vowel.includes(letter))
+            return true;
+        
         }
+        
+    return false
 }
+
+
+
+
+
+
 
 console.log(hasVowel('dog'));          // => true
 console.log(hasVowel('conventional')); // => true

@@ -6,7 +6,9 @@ contain a vowel, return null.
 Vowels are the letters "a", "e", "i", "o", "u".
 */
 
-// Your code here 
+function getFirstVowel(word) {
+    
+}
 
 // console.log(getFirstVowel('battery'));      // 'a'
 // console.log(getFirstVowel('tunnel'));       // 'u'

@@ -7,8 +7,8 @@ Vowels are the letters "a", "e", "i", "o", "u".
 
 function countVowels(word) {
     let count = 0;
-    let i = '';
-    for (let i = 0; i < word.length; i++) {
+    let i = 0;
+    for (i = 0; i < word.length; i++) {
         let char = word[i];
         if (char === 'a' ||
             char === 'e' || 
