@@ -7,15 +7,25 @@ Vowels are the letters "a", "e", "i", "o", "u".
 */
 
 function getFirstVowel(word) {
-    
+    let vowel = 'aeiou';
+
+    for (let i = 0; i < word.length; i++) {
+        let letter = word[i];
+
+        if (vowel.includes(letter)) {
+            return letter
+        }
+
+    }
+    return null
 }
 
-// console.log(getFirstVowel('battery'));      // 'a'
-// console.log(getFirstVowel('tunnel'));       // 'u'
-// console.log(getFirstVowel('dog'));          // 'o'
-// console.log(getFirstVowel('conventional')); // 'o'
-// console.log(getFirstVowel('rhythm'));       // null
-// console.log(getFirstVowel('try'));          // null
+console.log(getFirstVowel('battery'));      // 'a'
+console.log(getFirstVowel('tunnel'));       // 'u'
+console.log(getFirstVowel('dog'));          // 'o'
+console.log(getFirstVowel('conventional')); // 'o'
+console.log(getFirstVowel('rhythm'));       // null
+console.log(getFirstVowel('try'));          // null
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = getFirstVowel;
