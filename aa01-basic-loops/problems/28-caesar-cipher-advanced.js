@@ -7,12 +7,20 @@ Feel free to use this variable: let alphabet = "abcdefghijklmnopqrstuvwxyz";
 */
 
 function caesarCipher(string, num) {
-    // Your code here 
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    let output = '';
+    for(i = 0; i < string.length; i++) {
+        let letter = string[i];
+        let alphabetIndex = alphabet.indexOf(letter);
+        modLet = (alphabetIndex + num) % alphabet.length;
+        output = output + alphabet[modLet];
+    }
+return output;
 }
 
-// console.log(caesarCipher("apple", 1)); // "bqqmf"
-// console.log(caesarCipher("bootcamp", 2)); // "dqqvecor"
-// console.log(caesarCipher("zebra", 4)); // "difve"
+console.log(caesarCipher("apple", 1)); // "bqqmf"
+console.log(caesarCipher("bootcamp", 2)); // "dqqvecor"
+console.log(caesarCipher("zebra", 4)); // "difve"
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = caesarCipher;
