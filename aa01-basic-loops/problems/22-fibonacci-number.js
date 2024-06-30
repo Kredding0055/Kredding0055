@@ -24,7 +24,6 @@ function fib(n) {
         result[0] = result[1];
         result[1] = nextResult;
         i++;
-        //console.log(result);
     }
     return result[1];
 }
