@@ -10,7 +10,6 @@ For example, since 64 = 8 * 8 and 144 = 12 * 12, 64 and 144 are perfect squares;
 */
 
 function isPerfectSquare(num) {
-    //let digit = 0;
     for(let i = 1; i <= num; i++) {
 
         if(i * i === num) {

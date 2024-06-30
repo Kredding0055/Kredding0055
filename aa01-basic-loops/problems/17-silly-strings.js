@@ -11,28 +11,32 @@ Vowels are the letters "a", "e", "i", "o", "u".
 // 3. put string back together.
 
 function sillyString(word) {
-    let vowel = 'aeiou';
-
-    for(let i = 0; i <= word.length; i++) {
+    let vowels = 'aeiou';
+    let str = '';
+    for(let i = 0; i < word.length; i++) {
        let letter = word[i];
+
+        if(vowels.includes(letter)) {
+            let first = word.slice(0,i);
+            str = str + letter + 'b' + letter;
         
-        if(vowel.includes(letter)) {
-            str = word[i] + 'b' + letter;
-            //str1 = word[i] + str;
-            return str;
         }
+        else {
+            str = str + letter;
+        }
+        
 
 
     }
-    
+return str;
 }
 
 console.log(sillyString('stop'));       // stobop
-// console.log(sillyString('that'));       // thabat
-// console.log(sillyString('can'));        // caban
-// console.log(sillyString('cats'));       // cabats
+console.log(sillyString('that'));       // thabat
+console.log(sillyString('can'));        // caban
+console.log(sillyString('cats'));       // cabats
 console.log(sillyString('italy'));      // ibitabaly
-// console.log(sillyString('scooter'));    // scobooboteber
+console.log(sillyString('scooter'));    // scobooboteber
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = sillyString;

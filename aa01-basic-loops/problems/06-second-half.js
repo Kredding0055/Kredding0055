@@ -6,7 +6,6 @@ half of characters in the string parameter.
 
 function secondHalf(str) {
   
-  let secHalf;
   if (str.length % 2 === 0) {
     secHalf = str.length / 2;
   }else {
