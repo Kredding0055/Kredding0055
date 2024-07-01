@@ -16,7 +16,7 @@ function getIndexOf(array1, array2) {
             return i;
         }
         if(array2 == (array1[i])) {
-            return i;;
+            return i;
         }
     }
     return -1;
