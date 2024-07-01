@@ -8,7 +8,7 @@ function product(num) {
     count = num[0];
 
     for(let i = 1; i < num.length; i++) {
-        count = count * num[i];
+        count *= num[i];
     }
     return count;
 } 
