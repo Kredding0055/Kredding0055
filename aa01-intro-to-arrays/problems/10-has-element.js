@@ -12,7 +12,7 @@ function hasElement(char1, char2) {
     }
 
     for(let i = 0; i < char1.length; i ++) {
-        if((char2[0]) === (char1[i])) {
+        if(char2[0] === char1[i]) {
             return true;
         }
         if(char2 == char1[i]) {
