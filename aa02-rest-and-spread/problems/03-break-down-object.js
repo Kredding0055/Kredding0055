@@ -6,14 +6,25 @@ values of the object.
 **Hint**: Use spread syntax to spread out elements into an array!
 */
 
-// Your code here 
+function breakDownObj(obj) {
+  arrayKeys = [];
+  arrayValues = [];
+  for(let key in obj) {
+  arrayKeys.push(key);
+  let value = obj[key];
+  console.log(value);
+  arrayValues.push(value);
+  }
+  
+  return [...arrayKeys,...arrayValues];
+}
 
-// console.log(breakDownObj(
-//   { name: 'Rupert', age: 5, speak: 'Meow' }
-// )); // => [ 'name', 'age', 'speak', 'Rupert', 5, 'Meow' ]
-// console.log(breakDownObj(
-//   { location: 'NY', borough: 'Brooklyn' }
-// )); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
+console.log(breakDownObj(
+   { name: 'Rupert', age: 5, speak: 'Meow' }
+ )); // => [ 'name', 'age', 'speak', 'Rupert', 5, 'Meow' ]
+console.log(breakDownObj(
+  { location: 'NY', borough: 'Brooklyn' }
+)); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
