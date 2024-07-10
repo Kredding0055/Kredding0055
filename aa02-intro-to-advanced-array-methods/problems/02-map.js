@@ -24,9 +24,19 @@ const friends = [
   }
 ];
 
-const goodFriendsOrNot;
 
-// console.log(goodFriendsOrNot);          // [false, false, true, true]
+
+const goodFriendsOrNot = friends.map(  (friends) => {
+  if(friends.yearsOfFriendship > 5) {
+    return true;
+  }
+  else {
+    return false;
+  }
+
+});
+
+console.log(goodFriendsOrNot);          // [false, false, true, true]
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
