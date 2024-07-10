@@ -23,10 +23,22 @@ const friends = [
   }
 ];
 
+let vowels = 'aeiouAEIOU';
 // Hint: create an array of vowels to use in your solution.
-const threeVowelFriend;
+const threeVowelFriend = friends.find( (friend) => {
+  let name = friend.name
+  count = 0
+  for(let i = 0; i < name.length; i++) {
+  let letter = name[i]
+  if(vowels.includes(letter)) {
+    count += 1
+    }
+  }
+  return count > 2
 
-// console.log(threeVowelFriend); // [ { name: 'Angela', yearsOfFriendship: 2 } ]
+});
+
+console.log(threeVowelFriend); // [ { name: 'Angela', yearsOfFriendship: 2 } ]
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/

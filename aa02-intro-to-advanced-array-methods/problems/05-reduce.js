@@ -22,11 +22,14 @@ const friends = [
     yearsOfFriendship: 6
   }
 ];
+let initialValue = 0;
+const totalYears = friends.reduce(  (acc, friend) => {
+  console.log('1', acc, friend);
+  acc += friend.yearsOfFriendship;
+  return acc;
+},0)
 
-// Hint: create an array of vowels to use in your solution.
-const totalYears;
-
-// console.log(totalYears); // 19
+console.log(totalYears); // 19
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
