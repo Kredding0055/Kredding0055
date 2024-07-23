@@ -9,6 +9,7 @@ function objectToArraySum(obj) {
   let pairsArray = [];
   let keys = Object.keys(obj);
   let values = Object.values(obj);
+  console.log('11111', keys);
   
   for(let i = 0; i < keys.length; i++) {
     let key = keys[i];

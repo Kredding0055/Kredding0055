@@ -24,7 +24,6 @@ const friends = [
 ];
 let initialValue = 0;
 const totalYears = friends.reduce(  (acc, friend) => {
-  console.log('1', acc, friend);
   acc += friend.yearsOfFriendship;
   return acc;
 },0)

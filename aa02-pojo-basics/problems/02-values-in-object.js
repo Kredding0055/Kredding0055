@@ -23,9 +23,10 @@ function valuesInObject(obj) {
 
 
   let array = [];
-  for(let values in obj) {
-    console.log('1', values);
-    array.push(values);
+  for(let key in obj) {
+    let value = obj[key];
+    console.log('1', value);
+    array.push(value);
   }
   return array;
 } 

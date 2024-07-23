@@ -4,13 +4,17 @@ Write a function spiralOrder(matrix) that takes in a 2-dimensional array
 */
 
 
-// Your code here 
+function spiralOrder(matrix) {
+let array = [];
 
-// matrix = [[ 1, 2, 3],
-//           [ 4, 5, 6],
-//           [ 7, 8, 9]]
+    
+}
 
-// console.log(spiralOrder(matrix)); // [1,2,3,6,9,8,7,4,5]
+matrix = [[ 1, 2, 3],
+          [ 4, 5, 6],
+          [ 7, 8, 9]]
+
+console.log(spiralOrder(matrix)); // [1,2,3,6,9,8,7,4,5]
 
 // matrix = [[1, 2, 3, 4],
 //           [5, 6, 7, 8],
